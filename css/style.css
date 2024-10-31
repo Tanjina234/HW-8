@@ -1,0 +1,343 @@
+/* *COMMON CSS STARTS HERE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  body {
+    font-family: Poppins, system-ui;
+  }
+  
+  .img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container {
+    max-width: 1240px;
+    margin: auto;
+  }
+  
+  .btn-primary {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    background-color: #b88e2f;
+    padding: 12px 36px;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+  
+  /** COMMON CSS ENDS HERE */
+  
+  /* *NAVBAR STARTS HERE */
+  nav .row {
+    align-items: center;
+  }
+  nav .quickMenu {
+    width: 30%;
+  }
+  nav .menu {
+    width: 45%;
+  }
+  nav .logo {
+    width: 25%;
+  }
+  
+  nav .menu ul {
+    justify-content: center;
+  }
+  nav .menu ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    padding: 38px 37.5px;
+    display: inline-block;
+  }
+  
+  nav .quickMenu ul {
+    justify-content: end;
+  }
+  nav .quickMenu ul li a {
+    font-size: 22px;
+    color: black;
+    padding: 36px 22.5px;
+    display: inline-block;
+  }
+  
+  /* *NAVBAR ENDS HERE */
+
+/* * BANNER STARTS HERE */
+#banner {
+    background-image: url(../images/banner.jpg);
+  
+    height: 716px;
+    background-position: center;
+    background-size: cover;
+    padding-top: 157px;
+    /* margin-top: 100px; */
+  }
+  .bannerCnt {
+    width: 643px;
+    background-color: #fff3e3;
+  
+    padding: 62px 43px 37px;
+    margin-left: auto;
+    margin-right: 58px;
+    /* margin-top: 157px; */
+    border-radius: 10px;
+  }
+  
+  .bannerCnt h4 {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.19em;
+    color: #333;
+  }
+  .bannerCnt h2 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 125%;
+    color: #b88e2f;
+    margin: 4px 0 17px;
+  }
+  .bannerCnt p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #333;
+    margin-bottom: 46px;
+  }
+  .bannerCnt a {
+    padding: 25px 72px;
+    text-transform: uppercase;
+  }
+  
+  /* * BANNER ENDS HERE */
+  
+  /* CATEGORY STARTS HERE */
+  #category {
+    margin: 52px 0 56px;
+    text-align: center;
+  }
+  
+  #category .heading h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #333;
+  }
+  #category .heading p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #666;
+  }
+  .categoryCard {
+    width: 33.33%;
+    margin-top: 62px;
+  
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* CATEGORY ENDS HERE */
+  
+  /* PRODUCT STARTS HERE */
+ 
+
+
+  #products {
+    margin-bottom: 69px;
+    
+  }
+  .productCard {
+    width: calc(25% - 2rem);
+    margin: 0 1rem;
+  }
+  .productCard .productImage{
+    position: relative;
+  }
+  .productCard .productImage .discount {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #e97171;
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    font-weight: 500;
+    top: 24px;
+    right: 24px;
+  }
+  
+  .productCard .productCnt {
+    padding: 16px 20px 30px;
+    background-color: #f4f5f7;
+  }
+  
+  .productCard .productCnt h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #3a3a3a;
+  }
+  .productCard .productCnt p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #898989;
+    margin: 8px 0;
+  }
+  .productCard .productCnt h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3a3a3a;
+  }
+  
+  .productCard .productCnt h4 span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: line-through;
+    color: #b0b0b0;
+  }
+  .productCard .overlay {
+    position: absolute;
+    background-color: rgba(58, 58, 58, 0.72);
+    color: white;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 0.5s;
+  }
+  
+  .productCard .overlay .cnt {
+    transform: translateY(60px);
+    transition: 0.35s;
+    opacity: 0;
+    transition-delay: 0.3s;
+  }
+  
+  .productCard:hover .overlay,
+  .productCard:hover .overlay .cnt {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  
+  .productCard .overlay .btn-primary {
+    background-color: white;
+    color: #b88e2f;
+    transition: 0.2s;
+    margin-bottom: 24px;
+  }
+  .productCard .overlay .btn-primary:hover {
+    background-color: #b88e2f;
+    color: white;
+  }
+  
+  .productCard .overlay .row a {
+    margin: 0 10px;
+  }
+  .showMoreBtn {
+    margin-top: 32px;
+    text-align: center;
+  }
+  
+  /* PRODUCT ENDS HERE */
+  
+  /* FOOTER STARTS HERE */
+  footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.17);
+  }
+  
+  footer .footerTop {
+    background: #d9d9d9;
+    height: 109px;
+    margin-bottom: 23px;
+  }
+  
+  .address {
+    width: 30%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9f9f9f;
+  }
+  
+  .address p {
+    max-width: 285px;
+  }
+  
+  .menu {
+    width: 15%;
+  }
+  
+  .quickMenu,
+  .subscribe {
+    width: 25%;
+  }
+  
+  .menu a,
+  .quickMenu a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 46px;
+    display: block;
+  }
+  
+  footer .footerMiddle {
+    margin-bottom: 48px;
+  }
+  
+  .subscribe input {
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 4px 0;
+    margin-right: 10px;
+  }
+  .subscribe button {
+    border: none;
+    border-bottom: 1px solid #000;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    background-color: transparent;
+  }
+  
+  .footerEnd {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    border-top: 1px solid #d9d9d9;
+    padding: 35px 0;
+  }
+  
+  /* FOOTER ENDS HERE */
+  
+  
